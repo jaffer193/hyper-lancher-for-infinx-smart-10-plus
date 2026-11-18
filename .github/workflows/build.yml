@@ -15,6 +15,11 @@ jobs:
       - name: Unzip project
         run: unzip -o HyperLauncher.zip
 
+      - name: Enable AndroidX
+        run: |
+          echo "android.useAndroidX=true" >> HyperLauncher/gradle.properties
+          echo "android.nonTransitiveRClass=true" >> HyperLauncher/gradle.properties
+
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
