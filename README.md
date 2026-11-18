@@ -1,0 +1,1 @@
+# hyper-lancher-for-infinx-smart-10-plus
